@@ -1,6 +1,7 @@
 import { prisma } from "@/src/lib/prisma";
 import CategoryIcon from "../ui/CategoryIcon";
 import Logo from "../ui/Logo";
+import MadeBy from "../ui/MadeBy";
 
 // -----------------------------
 // Data Fetching: getCategories
@@ -43,6 +44,8 @@ export default async function OrderSidebar() {
             category={category} // Pass category data to icon component
           />
         ))}
+
+        <MadeBy />
       </nav>
     </aside>
   );

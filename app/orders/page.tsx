@@ -1,6 +1,7 @@
 "use client";
 import useSWR from "swr";
 import Logo from "@/components/ui/Logo";
+import MadeBy from "@/components/ui/MadeBy";
 import { OrderWithProducts } from "@/src/types";
 import LatestOrderItem from "@/components/order/LatestOrderItem";
 
@@ -31,6 +32,8 @@ export default function OrdersPage() {
         ) : (
           <p className="text-center my-10">No order is ready yet</p>
         )}
+
+        <MadeBy />
       </>
     );
 }
