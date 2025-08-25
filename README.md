@@ -1,36 +1,24 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## McDowell's Burgers and Café
 
-## Getting Started
+### 💻 Description:
+McDowell’s is a fullstack application developed with Next.js and TypeScript, designed to function as a kiosk system for a fast-food and café business.
 
-First, run the development server:
+* The customer-facing side runs under /order/[category], where users can select items, place an order, and complete payment seamlessly.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+* The kitchen/admin panel is located at /admin, where staff can:
+-- View incoming orders in real-time
+-- Update order statuses (e.g., mark as completed)
+-- Manage the menu by creating and editing products
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+* Once an order is completed, it is displayed at /orders, serving as the pickup screen where customers can confirm their orders are ready.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+The app is powered by MongoDB with Prisma for database management, and uses SWR, Zod, and Zustand for state management, data fetching, and schema validation. Together, these tools ensure a responsive, scalable, and reliable kiosk experience tailored for the food-service industry.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+Feel free to create your own orders!
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+### 🌐 Links:
+[![Live Demo](https://img.shields.io/badge/live%20demo%20-8A2BE2)](https://mcdowells-nextjs-shop.vercel.app/) 
+[![Admin Panel](https://img.shields.io/badge/admin%20panel%20-8A2BE2)](https://mcdowells-nextjs-shop.vercel.app/admin/orders)
+[![Orders Panel](https://img.shields.io/badge/orders%20panel%20-8A2BE2)](https://mcdowells-nextjs-shop.vercel.app/orders)
+[![Portfolio](https://img.shields.io/badge/see%20portfolio%20-226EB5)](https://federicosavastano.vercel.app/) 
+ 
