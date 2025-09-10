@@ -10,5 +10,11 @@ const config: Config = {
     extend: {},
   },
   plugins: [],
+  variants: {
+    extend: {
+      backgroundColor: ["disabled", "active", "selected"],
+      cursor: ["disabled"],
+    },
+  },
 };
 export default config;

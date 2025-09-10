@@ -10,7 +10,13 @@ export default function Logo() {
   return (
     <div className="flex justify-center mt-5">
       <div className="relative w-40 h-40">
-        <Image fill alt="Mc Dowell's Logo" src="/mcdowellslogo.webp" />
+        <Image
+          fill
+          sizes="(max-width: 768px) 100vw, 33vw"
+          alt="Mc Dowell's Logo"
+          src="/mcdowellslogo.webp"
+          priority={true}
+        />
       </div>
     </div>
   );

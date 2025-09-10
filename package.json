@@ -1,5 +1,5 @@
 {
-  "name": "quiosco-next",
+  "name": "mcdowells-next",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -19,6 +19,7 @@
     "react-dom": "^18",
     "react-icons": "^5.0.1",
     "react-toastify": "^10.0.4",
+    "stripe": "^18.5.0",
     "swr": "^2.2.5",
     "zod": "^3.22.4",
     "zustand": "^4.5.2"
