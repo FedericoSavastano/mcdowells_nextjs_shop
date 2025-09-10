@@ -53,7 +53,7 @@ export default function Checkout() {
         window.location.href = data.url; // redirect to Stripe Checkout
       }
     } catch (err) {
-      console.error("Error:", err);
+      console.error("Error ", err);
       toast.error("something went wrong. try again");
     }
   };
