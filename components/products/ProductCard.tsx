@@ -35,6 +35,7 @@ export default function ProductCard({ product }: ProductCardProps) {
         height={500}
         src={imagePath}
         style={{ width: "100%", height: "auto" }}
+        priority={false}
         alt={`Image of ${product.name}`}
       />
 

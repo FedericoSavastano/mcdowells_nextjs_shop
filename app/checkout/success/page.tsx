@@ -43,7 +43,7 @@ export default function SuccessPage() {
         savedOrder.order.forEach((ord: Product) => addToOrder(ord));
       }
     }
-  });
+  }, [addToOrder]);
 
   /**
    * Watches for changes in the order state.
@@ -118,7 +118,13 @@ export default function SuccessPage() {
 
       <div className="flex justify-center mt-5">
         <div className="relative w-20 h-20">
-          <Image fill alt="Mc Dowell's Logo" src="/mcdowellslogo.webp" />
+          <Image
+            fill
+            sizes="(max-width: 768px) 100vw, 33vw"
+            priority={true}
+            alt="Mc Dowell's Logo"
+            src="/mcdowellslogo.webp"
+          />
         </div>
       </div>
 
