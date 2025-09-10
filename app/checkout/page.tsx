@@ -93,9 +93,9 @@ export default function Checkout() {
       </p>
 
       <p className="text-center mt-5">
-        * you will be redirected to the Stripe page to pay. Please use this
-        dummy credit card number "4242 4242 4242 4242", other data in the Stripe
-        form is indiferent
+        {`* you will be redirected to the Stripe page to pay. Please use this
+        dummy credit card number '4242 4242 4242 4242', other data in the Stripe
+        form is indiferent`}
       </p>
 
       {/* Order confirmation form */}

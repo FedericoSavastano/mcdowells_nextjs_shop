@@ -46,19 +46,6 @@ export default function SuccessPage() {
   }, []);
 
   /**
-   * Watches for changes in the order state.
-   * When the order is populated, it triggers order creation on the server.
-   */
-  useEffect(() => {
-    const saved = localStorage.getItem("orderData");
-    const savedOrder = JSON.parse(saved!);
-
-    if (order.length) {
-      handleCreateOrder(savedOrder.name, savedOrder.total, order);
-    }
-  }, [order]);
-
-  /**
    * Handles the creation of an order.
    *
    * - Validates the order data against Zod's {@link OrderSchema}.
@@ -109,6 +96,19 @@ export default function SuccessPage() {
       router.push("/");
     }, 2000);
   };
+
+  /**
+   * Watches for changes in the order state.
+   * When the order is populated, it triggers order creation on the server.
+   */
+  useEffect(() => {
+    const saved = localStorage.getItem("orderData");
+    const savedOrder = JSON.parse(saved!);
+
+    if (order.length) {
+      handleCreateOrder(savedOrder.name, savedOrder.total, order);
+    }
+  }, [order, addToOrder, handleCreateOrder]);
 
   return (
     <>
