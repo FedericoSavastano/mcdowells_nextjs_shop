@@ -123,7 +123,7 @@ export default function SuccessPage() {
       </div>
 
       <h4 className="text-center mt-20 text-2xl font-black">
-        Check the 'Orders Ready' screen to recieve it when it's ready
+        {` Check the 'Orders Ready' screen to recieve it when it's ready `}
       </h4>
 
       <h2 className="text-center mt-20 text-3xl font-black">Thanks!</h2>
