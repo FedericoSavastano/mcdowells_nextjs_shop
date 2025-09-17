@@ -44,7 +44,7 @@ export default function Checkout() {
           "Content-Type": "application/json",
         },
         body: JSON.stringify({
-          amount: total * 100, // (in cents)
+          amount: Math.round(total * 100), // (in cents)
           productName: "McDowell's",
         }),
       });
